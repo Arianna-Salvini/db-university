@@ -22,17 +22,15 @@
 > SELECT * FROM degrees WHERE level = 'magistrale'; ->  Mostro le righe 0 - 37 (38 del totale)
 
 *** Da quanti dipartimenti è composta l'università? (12) ***
-> SELECT COUNT(*) as n_departments FROM departments; -> 
+> SELECT COUNT(*) as tot_departments FROM departments; -> 
 
-| n_departments |
+| tot_departments |
 |:-------------:|
 |12             |
 
+*** Quanti sono gli insegnanti che non hanno un numero di telefono? (50) ***
+> SELECT COUNT(*) AS teachers_no_number FRom teachers WHERE phone IS null; 
 
-
-
-
-
-
-
-
+| teachers_no_number |
+|:------------------:|
+|50                  |

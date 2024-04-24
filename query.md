@@ -18,3 +18,21 @@
 *** Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21) ***
 > SELECT * FROM exams WHERE date = '2020-06-20' AND TIME(hour) > '14:00:00'; -> Mostro le righe 0 - 20 (21 del totale)
 
+*** Selezionare tutti i corsi di laurea magistrale (38) ***
+> SELECT * FROM degrees WHERE level = 'magistrale'; ->  Mostro le righe 0 - 37 (38 del totale)
+
+*** Da quanti dipartimenti è composta l'università? (12) ***
+> SELECT COUNT(*) as n_departments FROM departments; -> 
+
+| n_departments |
+|:-------------:|
+|12             |
+
+
+
+
+
+
+
+
+

@@ -14,6 +14,7 @@ Mostro le righe 0 -  3 (4 del totale, La query ha impiegato 0.0008 secondi.)
 |2019| 1709                |	
 |2018| 912	               |
 
+
 *** Contare gli insegnanti che hanno l'ufficio nello stesso edificio ***
 
 > SELECT `office_address`, COUNT(*) AS `tot_teachers`
@@ -49,3 +50,40 @@ Mostro le righe 0 - 24 (29 del totale, La query ha impiegato 0.0003 secondi.)
 | Strada Neri 577                    |	3        |	
 | Strada Vitali 8 Piano 0            |	5        |	
 | Via Elga 7 Piano 4                 |	1        |	
+
+
+*** Calcolare la media dei voti di ogni appello d'esame ***
+
+SELECT `exam_id`,  AVG(`vote`) AS `average_vote` 
+FROM `exam_student` 
+GROUP BY `exam_id`;
+
+Mostro le righe 0 - 24 (4078 del totale, La query ha impiegato 0.0001 secondi.)
+
+|exam_id|average_vote|	
+|:-----:|:----------:|
+|1      |16.8824     |
+|2      |16.4615     |
+|3      |20.3333     |
+|4      |27.0000     |
+|6      |17.5000     |
+|7      |19.6000     |
+|8      |6.5000      |
+|9      |12.0000     |
+|11     |17.4324     |	
+|12     |14.8889     |	
+|13     |22.0000     |	
+|16     |18.0526     |	
+|17     |19.0000     |	
+|18     |5.5000      |
+|19     |22.0000     |	
+|21     |16.6176     |	
+|22     |15.0000     |	
+|23     |12.7500     |	
+|24     |12.0000     |	
+|25     |3.0000      |
+|26     |19.1667     |	
+|27     |24.5000     |	
+|31     |16.9583     |	
+|32     |17.2500     |	
+|36     |20.1818     |	

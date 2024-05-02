@@ -117,6 +117,7 @@ Mostro le righe 0 - 11 (12 del totale, La query ha impiegato 0.0001 secondi.)
 
 
 # JOINS 
+ <!-- Desclaimer: I know is best practice to use backticks for names of columns and tables hower from now I'm going to avoid them in order to be more faster in writing queries. -->
 
 *** Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia ***
 
@@ -165,3 +166,7 @@ Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0.0001 secondi.)
 |Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica                 |
 |Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica Industriale     |
 ...
+
+
+*** Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44) ***
+

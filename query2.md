@@ -154,17 +154,18 @@ Mostro le righe 0 - 24 (5000 totali, 0 nella query, La query ha impiegato 0.0047
 
 Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0.0001 secondi.)
 
-|department                  |degree                                                |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Astronomia              |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Bioingegneria|          |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia evoluzionis... |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia marina         |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia molecolare     |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia sanitaria      |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biotecnologie indust... |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Business Administrat... |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica                 |
-|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica Industriale     |
+|department                   |degree                                                 |
+|:---------------------------:|:-----------------------------------------------------:|
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Astronomia               |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Bioingegneria|           | 
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Biologia evoluzionis...  |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Biologia marina          |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Biologia molecolare      |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Biologia sanitaria       |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Biotecnologie indust...  |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Business Administrat...  |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Chimica                  |
+|Dipartimento di Neuroscienze |Corso di Laurea Magistrale in Chimica Industriale      |
 ...
 
 

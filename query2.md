@@ -204,32 +204,32 @@ Mostro le righe 0 - 10 (11 del totale, La query ha impiegato 0.0001 secondi.)
 
 Mostro le righe 0 - 24 (5000 del totale, La query ha impiegato 0.0111 secondi.)
 
-student_lastname	student_name	degree	name	level	address	email	website	
-Amato	Brigitta	Corso di Laurea Magistrale in Relazioni Internazio...	Dipartimento di Scienze politiche, giuridiche e st...	magistrale	Incrocio Milani 70 Appartamento 93	relazioni-internazionali-e-diplomazia@uni.it	www.relazioni-internazionali-e-diplomazia.uni.it	
-Amato	Carlo	Corso di Laurea in Ingegneria per l'Ambiente e il ...	Dipartimento di Ingegneria civile, edile e ambient...	triennale	Borgo Nestore 88 Piano 7	ingegneria-per-lambiente-e-il-territorio@uni.it	www.ingegneria-per-lambiente-e-il-territorio.uni.i...	
-Amato	Carlo	Corso di Laurea Magistrale in Informatica	Dipartimento di Matematica	magistrale	Incrocio Eustachio 253 Appartamento 90	informatica@uni.it	www.informatica.uni.it	
-Amato	Ciro	Corso di Laurea in Fisioterapia	Dipartimento di Neuroscienze	triennale	Strada Parisi 5	fisioterapia@uni.it	www.fisioterapia.uni.it	
-Amato	Danuta	Corso di Laurea Magistrale in Lingue Moderne per l...	Dipartimento di Studi linguistici e letterari	magistrale	Incrocio Donatella 72 Appartamento 53	lingue-moderne-per-la-comunicazione-e-la-cooperazi...	www.lingue-moderne-per-la-comunicazione-e-la-coope...	
-Amato	Diamante	Corso di Laurea Magistrale in Cybersecurity	Dipartimento di Ingegneria dell'informazione	magistrale	Piazza Quasimodo 14	cybersecurity@uni.it	www.cybersecurity.uni.it	
-Amato	Diana	Corso di Laurea Magistrale in Chimica	Dipartimento di Scienze chimiche	magistrale	Strada Soriana 951	chimica@uni.it	www.chimica.uni.it	
-Amato	Domingo	Corso di Laurea Magistrale in Ingegneria dell'Auto...	Dipartimento di Ingegneria dell'informazione	magistrale	Strada Ippolito 684	ingegneria-dellautomazione@uni.it	www.ingegneria-dellautomazione.uni.it	
-Amato	Egisto	Corso di Laurea in Fisioterapia	Dipartimento di Neuroscienze	triennale	Strada Parisi 5	fisioterapia@uni.it	www.fisioterapia.uni.it	
-Amato	Enrica	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
-Amato	Enrica	Corso di Laurea in Lettere	Dipartimento di Studi linguistici e letterari	triennale	Rotonda Moretti 6	lettere@uni.it	www.lettere.uni.it	
-Amato	Felicia	Corso di Laurea Magistrale in European and Global ...	Dipartimento di Scienze politiche, giuridiche e st...	magistrale	Incrocio Orlando 731	european-and-global-studies@uni.it	www.european-and-global-studies.uni.it	
-Amato	Fiorenzo	Corso di Laurea in Infermieristica	Dipartimento di Medicina	triennale	Incrocio Gentile 507 Appartamento 78	infermieristica@uni.it	www.infermieristica.uni.it	
-Amato	Genziana	Corso di Laurea Magistrale in Astronomia	Dipartimento di Fisica e astronomia	magistrale	Via Samira 39	astronomia@uni.it	www.astronomia.uni.it	
-Amato	Germano	Corso di Laurea Magistrale in Cybersecurity	Dipartimento di Ingegneria dell'informazione	magistrale	Piazza Quasimodo 14	cybersecurity@uni.it	www.cybersecurity.uni.it	
-Amato	Giacinto	Corso di Laurea in Ingegneria per l'Ambiente e il ...	Dipartimento di Ingegneria civile, edile e ambient...	triennale	Borgo Nestore 88 Piano 7	ingegneria-per-lambiente-e-il-territorio@uni.it	www.ingegneria-per-lambiente-e-il-territorio.uni.i...	
-Amato	Grazia	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
-Amato	Iacopo	Corso di Laurea Magistrale in Economia e Diritto	Dipartimento di Scienze economiche e aziendali	magistrale	Incrocio Joseph 585 Piano 7	economia-e-diritto@uni.it	www.economia-e-diritto.uni.it	
-Amato	Irene	Corso di Laurea Magistrale in Ingegneria Informati...	Dipartimento di Ingegneria dell'informazione	magistrale	Via Milani 9	ingegneria-informatica@uni.it	www.ingegneria-informatica.uni.it	
-Amato	Joshua	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
-Amato	Joshua	Corso di Laurea Magistrale in Bioingegneria	Dipartimento di Ingegneria dell'informazione	magistrale	Contrada Sibilla 626	bioingegneria@uni.it	www.bioingegneria.uni.it	
-Amato	Kociss	Corso di Laurea in Scienze naturali	Dipartimento di Biologia	triennale	Rotonda Ferri 4 Piano 2	scienze-naturali@uni.it	www.scienze-naturali.uni.it	
-Amato	Loris	Corso di Laurea Magistrale in Scienze della natura	Dipartimento di Biologia	magistrale	Strada Negri 323	scienze-della-natura@uni.it	www.scienze-della-natura.uni.it	
-Amato	Luigi	Corso di Laurea in Biologia molecolare	Dipartimento di Biologia	triennale	Incrocio Fabbri 3	biologia-molecolare@uni.it	www.biologia-molecolare.uni.it	
-Amato	Manfredi	Corso di Laurea in Diritto dell'Economia	Dipartimento di Scienze politiche, giuridiche e st...	triennale	Strada Miriana 2 Appartamento 06	diritto-delleconomia@uni.it	www.diritto-delleconomia.uni.it	
+|student_lastname|student_name|degree                                                       |   name                                                  |level        |address                                | email                                                 |website                                                |	
+|:--------------:|:----------:|:-----------------------------------------------------------:|:-------------------------------------------------------:|:-----------:|:-------------------------------------:|:-----------------------------------------------------:|:-----------------------------------------------------:|
+|Amato           |	Brigitta  |	Corso di Laurea Magistrale in Relazioni Internazio...       |	Dipartimento di Scienze politiche, giuridiche e st... |	magistrale	| Incrocio Milani 70 Appartamento 93    | relazioni-internazionali-e-diplomazia@uni.it   	    |www.relazioni-internazionali-e-diplomazia.uni.it	    |
+|Amato           |	Carlo     |	Corso di Laurea in Ingegneria per l'Ambiente e il ...       |	Dipartimento di Ingegneria civile, edile e ambient... |	triennale	| Borgo Nestore 88 Piano 7	            | ingegneria-per-lambiente-e-il-territorio@uni.it	    |www.ingegneria-per-lambiente-e-il-territorio.uni.i...	|
+|Amato           |	Carlo     |	Corso di Laurea Magistrale in Informatica                   |	Dipartimento di Matematica                            |	magistrale	| Incrocio Eustachio 253Appartamento 90	|informatica@uni.it	                                    |www.informatica.uni.it	                                |
+|Amato           |	Ciro      |	Corso di Laurea in Fisioterapia                             |	Dipartimento di Neuroscienze                          |	triennale	| Strada Parisi 5	                    | fisioterapia@uni.it	                                |www.fisioterapia.uni.it	                            |
+|Amato           |	Danuta    |	Corso di Laurea Magistrale in Lingue Moderne per l...       |	Dipartimento di Studi linguistici e letterari         |	magistrale	| Incrocio Donatella 72 Appartamento 53	| lingue-moderne-per-la-comunicazione-e-la-cooperazi...	|www.lingue-moderne-per-la-comunicazione-e-la-coope...  |  
+|Amato           |	Diamante  |	Corso di Laurea Magistrale in Cybersecurity                 |	Dipartimento di Ingegneria dell'informazione          |	magistrale	| Piazza Quasimodo 14	                | cybersecurity@uni                                     |www.chimica.uni.it	                                    |
+|Amato           |	Domingo   |	Corso di Laurea Magistrale in Ingegneria dell'Auto...       |	Dipartimento di Ingegneria dell'informazione          |	magistrale	| Strada Ippolito 684	                | ingegneria-dellautomazione@uni.it                     |www.ingegneria-dellautomazione.uni.it	                |
+|Amato           |	Egisto    |	Corso di Laurea in Fisioterapia                             |	Dipartimento di Neuroscienze                          |	triennale	| Strada Parisi 5	                    | fisioterapia@uni.it	                                |www.fisioterapia.uni.it	                            |
+|Amato           |	Enrica    |	Corso di Laurea in Biologia                                 |	Dipartimento di Biologia                              |	triennale	| Contrada Galli 289 Piano 5	        | biologia@uni.it	                                    |www.biologia.uni.it	                                |
+|Amato           |	Enrica    |	Corso di Laurea in Lettere                                  |	Dipartimento di Studi linguistici e letterari         |	triennale	| Rotonda Moretti 6                     | lettere@uni.it	                                    |www.lettere.uni.it                                     |	
+|Amato           |	Felicia   |	Corso di Laurea Magistrale in European and Global ...       |	Dipartimento di Scienze politiche, giuridiche e st... |	magistrale	| Incrocio Orlando 731                  | european-and-global-studies@uni.it	                |www.european-and-global-studies.uni.it	                |
+|Amato           |	Fiorenzo  |	Corso di Laurea in Infermieristica                          |	Dipartimento di Medicina                              |	triennale	| Incrocio Gentile 507 Appartamento 78	| infermieristica@uni.it	                            |www.infermieristica.uni.it	                            |
+|Amato           |	Genziana  |	Corso di Laurea Magistrale in Astronomia                    |	Dipartimento di Fisica e astronomia                   |	magistrale	| Via Samira 39	                        | astronomia@uni.it	                                    |www.astronomia.uni.it	                                |
+|Amato           |	Germano   |	Corso di Laurea Magistrale in Cybersecurity                 |	Dipartimento di Ingegneria dell'informazione          |	magistrale	| Piazza Quasimodo 14	                | cybersecurity@uni.it	                                |www.cybersecurity.uni.it	                            |
+|Amato           |	Giacinto  |	Corso di Laurea in Ingegneria per l'Ambiente e il ...       |	Dipartimento di Ingegneria civile, edile e ambient... |	triennale	| Borgo Nestore 88 Piano 7	            | ingegneria-per-lambiente-e-il-territorio@uni.it    	|www.ingegneria-per-lambiente-e-il-territorio.uni.i...	|
+|Amato           |	Grazia    |	Corso di Laurea in Biologia                                 |	Dipartimento di Biologia                              |	triennale	| Contrada Galli 289 Piano 5	        | biologia@uni.it	                                    |www.biologia.uni.it	                                |
+|Amato           |	Iacopo    |	Corso di Laurea Magistrale in Economia e Diritto            |	Dipartimento di Scienze economiche e aziendali        |	magistrale	| Incrocio Joseph 585 Piano 7	        | economia-e-diritto@uni.it                         	|www.economia-e-diritto.uni.it	                        |
+|Amato           |	Irene     |	Corso di Laurea Magistrale in Ingegneria Informati...       |	Dipartimento di Ingegneria dell'informazione          |	magistrale	| Via Milani 9	                        | ingegneria-informatica@uni.it	                        |www.ingegneria-informatica.uni.it	                    |
+|Amato           |	Joshua    |	Corso di Laurea in Biologia                                 |	Dipartimento di Biologia	                          | triennale	| Contrada Galli 289 Piano 5	        | biologia@uni.it	                                    |www.biologia.uni.it	                                |
+|Amat            |	Joshua    |	Corso di Laurea Magistrale in Bioingegneria                 |	Dipartimento di Ingegneria dell'informazione	      | magistrale	| Contrada Sibilla 626	                | bioingegneria@uni.it                                 	|www.bioingegneria.uni.it	                            |
+|Amato           |	Kociss    |	Corso di Laurea in Scienze naturali                         |	Dipartimento di Biologia	                          | triennale	| Rotonda Ferri 4 Piano 2	            | scienze-naturali@uni.it                           	|www.scienze-naturali.uni.it	                        |
+|Amato           |	Loris     |	Corso di Laurea Magistrale in Scienze della natura	        |   Dipartimento di Biologia	                          | magistrale	| Strada Negri 323	                    | scienze-della-natura@uni.it                        	|www.scienze-della-natura.uni.it	                    |
+|Amato           |	Luigi     |	Corso di Laurea in Biologia molecolare                      |	Dipartimento di Biologia	                          | triennale	| Incrocio Fabbri 3	                    | biologia-molecolare@uni.it	                        |www.biologia-molecolare.uni.it	                        |
+|Amat            |	Manfredi  |	Corso di Laurea in Diritto dell'Economia                    |	Dipartimento di Scienze politiche, giuridiche e st... |	triennale	| Strada Miriana 2 Appartamento 06	    | diritto-delleconomia@uni.it	                        |www.diritto-delleconomia.uni.it	                    |
 
 
 *** Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti ***
@@ -242,32 +242,33 @@ Amato	Manfredi	Corso di Laurea in Diritto dell'Economia	Dipartimento di Scienze 
 
 Mostro le righe 0 - 24 (1317 del totale, La query ha impiegato 0.0021 secondi.)
 
-degree	course	teacher_name	teacher_lastname	
-Corso di Laurea Magistrale in Biologia marina	corporis consequatur labore	Artemide	Rizzi	
-Corso di Laurea in Ingegneria Civile	est ratione qui	Artemide	Rizzi	
-Corso di Laurea in Logopedia	eligendi aut vel	Artemide	Rizzi	
-Corso di Laurea Magistrale in Chimica	voluptatem fuga incidunt	Artemide	Rizzi	
-Corso di Laurea in Economia	omnis culpa voluptatem	Artemide	Rizzi	
-Corso di Laurea Magistrale in Innovazione e Serviz...	nobis vitae reprehenderit	Artemide	Rizzi	
-Corso di Laurea Magistrale in Lingue Moderne per l...	saepe quod id	Artemide	Rizzi	
-Corso di Laurea in Biologia molecolare	aut consequatur sit	Gianantonio	Battaglia	
-Corso di Laurea in Ingegneria per l'Ambiente e il ...	laudantium sunt consequatur	Gianantonio	Battaglia	
-Corso di Laurea in Ingegneria Elettronica	corrupti enim praesentium	Gianantonio	Battaglia	
-Corso di Laurea Magistrale in Bioingegneria	architecto id cum	Gianantonio	Battaglia	
-Corso di Laurea in Infermieristica	rerum reiciendis quam	Gianantonio	Battaglia	
-Corso di Laurea in Tecniche di Laboratorio Biomedi...	eius animi atque	Gianantonio	Battaglia	
-Corso di Laurea in Educazione Professionale	similique id non	Gianantonio	Battaglia	
-Corso di Laurea in Fisioterapia	et in aspernatur	Gianantonio	Battaglia	
-Corso di Laurea in Lettere	facilis magnam rem	Gianantonio	Battaglia	
-Corso di Laurea in Ingegneria dell'Informazione	placeat mollitia atque	Erminia	Gatti	
-Corso di Laurea in Ingegneria Elettronica	officia dolor a	Erminia	Gatti	
-Corso di Laurea in Fisioterapia	officia nam pariatur	Erminia	Gatti	
-Corso di Laurea in Tecniche di Neurofisiopatologia	illum est ea	Erminia	Gatti	
-Corso di Laurea Magistrale in Odontoiatria e Prote...	qui corrupti itaque	Erminia	Gatti	
-Corso di Laurea in Chimica Industriale	aut reprehenderit deleniti	Erminia	Gatti	
-Corso di Laurea in Chimica Industriale	ea enim voluptatibus	Erminia	Gatti	
-Corso di Laurea in Statistica per le Tecnologie e ...	dolores dolor voluptas	Erminia	Gatti	
-Corso di Laurea in Lettere	ullam numquam perspiciatis	Erminia	Gatti	
+|degree	                                               |course                              |teacher_name|teacher_lastname|
+|:----------------------------------------------------:|:----------------------------------:|:----------:|:--------------:|
+|Corso di Laurea Magistrale in Biologia                | marina	corporis consequatur labore |Artemide	 |Rizzi	          |
+|Corso di Laurea in Ingegneria Civile                  |est ratione qui                  	|Artemide	 |Rizzi	          |
+|Corso di Laurea in Logopedia                          |eligendi aut vel	                |Artemide	 |Rizzi	          |
+|Corso di Laurea Magistrale in Chimica                 |voluptatem fuga incidunt        	|Artemide	 |Rizzi	          |
+|Corso di Laurea in Economia                           |omnis culpa voluptatem	            |Artemide	 |Rizzi	          |
+|Corso di Laurea Magistrale in Innovazione e Serviz... |nobis vitae reprehenderit	        |Artemide	 |Rizzi	          |
+|Corso di Laurea Magistrale in Lingue Moderne per l... |saepe quod id                     	|Artemide	 |Rizzi	          |
+|Corso di Laurea in Biologia molecolare                | aut consequatur sit	            |Gianantonio |Battaglia	      |
+|Corso di Laurea in Ingegneria per l'Ambiente e il ... |laudantium sunt consequatur	        |Gianantonio |Battaglia	      |
+|Corso di Laurea in Ingegneria Elettronica             |corrupti enim praesentium	        |Gianantonio |Battaglia	      |
+|Corso di Laurea Magistrale in Bioingegneria           |architecto id cum	                |Gianantonio |Battaglia	      |
+|Corso di Laurea in Infermieristica	                   |rerum reiciendis quam	            |Gianantonio |Battaglia	      |
+|Corso di Laurea in Tecniche di Laboratorio Biomedi... |eius animi atque	                |Gianantonio |Battaglia	      |
+|Corso di Laurea in Educazione Professionale           |similique id non	                |Gianantonio |Battaglia	      |
+|Corso di Laurea in Fisioterapia                       |et in aspernatur	                |Gianantonio |Battaglia	      |
+|Corso di Laurea in Lettere	                           |facilis magnam rem	                |Gianantonio |Battaglia	      |
+|Corso di Laurea in Ingegneria dell'Informazione	   |placeat mollitia atque	            |Erminia	 |Gatti	          |	
+|Corso di Laurea in Ingegneria Elettronica	           |officia dolor a	                    |Erminia	 |Gatti	          |	
+|Corso di Laurea in Fisioterapia	                   |officia nam pariatur	            |Erminia	 |Gatti	          |	
+|Corso di Laurea in Tecniche di Neurofisiopatologia    |illum est ea	                    |Erminia	 |Gatti	          |	
+|Corso di Laurea Magistrale in Odontoiatria e Prote... |qui corrupti itaque             	|Erminia	 |Gatti	          |	
+|Corso di Laurea in Chimica Industriale	               |aut reprehenderit deleniti	        |Erminia	 |Gatti	          |	
+|Corso di Laurea in Chimica Industriale	               |ea enim voluptatibus	            |Erminia	 |Gatti	          |	
+|Corso di Laurea in Statistica per le Tecnologie e ... |dolores dolor voluptas          	|Erminia	 |Gatti	          |	
+|Corso di Laurea in Lettere                            |ullam numquam perspiciatis      	|Erminia	 |Gatti	          |	
 
 
 *** Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54) ***
@@ -283,30 +284,31 @@ Corso di Laurea in Lettere	ullam numquam perspiciatis	Erminia	Gatti
 
 Mostro le righe 0 - 24 (54 del totale, La query ha impiegato 0.0003 secondi.)
 
-name	teacher_name	teacher_lastname	
-Dipartimento di Matematica	Loretta	Amato	
-Dipartimento di Matematica	Fulvio	Amato	
-Dipartimento di Matematica	Guendalina	Barbieri	
-Dipartimento di Matematica	Diamante	Barone	
-Dipartimento di Matematica	Kristel	Bellini	
-Dipartimento di Matematica	Maika	Bellini	
-Dipartimento di Matematica	Carmelo	Benedetti	
-Dipartimento di Matematica	Concetta	Bianchi	
-Dipartimento di Matematica	Elda	Bruno	
-Dipartimento di Matematica	Penelope	Bruno	
-Dipartimento di Matematica	Prisca	Caputo	
-Dipartimento di Matematica	Cira	Caputo	
-Dipartimento di Matematica	Valdo	Carbone	
-Dipartimento di Matematica	Pablo	Caruso	
-Dipartimento di Matematica	Cosetta	Costantini	
-Dipartimento di Matematica	Tosca	Donati	
-Dipartimento di Matematica	Sarita	Donati	
-Dipartimento di Matematica	Maria	Esposito	
-Dipartimento di Matematica	Gavino	Fabbri	
-Dipartimento di Matematica	Bibiana	Farina	
-Dipartimento di Matematica	Marvin	Ferrari	
-Dipartimento di Matematica	Noemi	Ferraro	
-Dipartimento di Matematica	Rudy	Fontana	
-Dipartimento di Matematica	Piererminio	Greco	
-Dipartimento di Matematica	Mariagiulia	Guerra	
+|name                      |teacher_name|teacher_lastname|	
+|:------------------------:|:----------:|:--------------:|
+|Dipartimento di Matematica|Loretta	    |Amato	         |
+|Dipartimento di Matematica|Fulvio      |Amato	         |
+|Dipartimento di Matematica|Guendalina	|Barbieri	     |
+|Dipartimento di Matematica|Diamante	|Barone	         |
+|Dipartimento di Matematica|Kristel	    |Bellini	     |
+|Dipartimento di Matematica|Maika	    |Bellini	     |
+|Dipartimento di Matematica|Carmelo	    |Benedetti       |	
+|Dipartimento di Matematica|Concetta	|Bianchi	     |
+|Dipartimento di Matematica|Elda	    |Bruno	         |
+|Dipartimento di Matematica|Penelope	|Bruno	         |
+|Dipartimento di Matematica|Prisca	    |Caputo	         |
+|Dipartimento di Matematica|Cira	    |Caputo	         |
+|Dipartimento di Matematica|Valdo	    |Carbone	     |
+|Dipartimento di Matematica|Pablo	    |Caruso	         |
+|Dipartimento di Matematica|Cosetta	    |Costantini	     |
+|Dipartimento di Matematica|Tosca	    |Donati	         |
+|Dipartimento di Matematica|Sarita	    |Donati	         |
+|Dipartimento di Matematica|Maria	    |Esposito	     |
+|Dipartimento di Matematica|Gavino	    |Fabbri	         |
+|Dipartimento di Matematica|Bibiana	    |Farina	         |
+|Dipartimento di Matematica|Marvin	    |Ferrari	     |
+|Dipartimento di Matematica|Noemi	    |Ferraro	     |
+|Dipartimento di Matematica|Rudy	    |Fontana	     |
+|Dipartimento di Matematica|Piererminio	|Greco	         |
+|Dipartimento di Matematica|Mariagiulia	|Guerra	         |
 

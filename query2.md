@@ -171,3 +171,25 @@ Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0.0001 secondi.)
 
 *** Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44) ***
 
+> SELECT courses.name AS "Courses of Dr. Fulvio Amato", courses.period
+> FROM teachers 
+> INNER JOIN course_teacher ON teachers.id = course_teacher.teacher_id 
+> INNER JOIN courses ON course_teacher.course_id = courses.id WHERE teachers.id = 44;
+
+Mostro le righe 0 - 10 (11 del totale, La query ha impiegato 0.0001 secondi.)
+
+|Courses of Dr. Fulvio Amato|period     |
+|:-------------------------:|:---------:|
+|impedit et eaque	        |I semestre |	
+|explicabo ab voluptas	    |I semestre |	
+|ullam ullam dignissimo     |I semestre |	
+|aut pariatur a	            |I semestre |	
+|alias voluptatibus sed	    |II semestre|	
+|facilis adipisci providen  |I semestre |	
+|doloribus nemo iure        |I semestre |	
+|et quasi enim	            |I semestre |	
+|facilis pariatur qui	    |I semestre |	
+|dolor repellat dignissimos |II semestre|	
+|magni magni omnis	        |I semestre |	
+
+

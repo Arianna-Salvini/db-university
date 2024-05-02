@@ -1,3 +1,5 @@
+# GROUP BY
+
 *** Contare quanti iscritti ci sono stati ogni anno ***
 
 > SELECT YEAR(`enrolment_date`) AS `year`, COUNT(`id`) AS `tot_enrolment_by_year`
@@ -112,4 +114,34 @@ Mostro le righe 0 - 11 (12 del totale, La query ha impiegato 0.0001 secondi.)
 |10	           |8          | 
 |11	           |3          |	
 |12            |7          |        
+
+
+# JOINS
+
+*** Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia ***
+
+SELECT degrees.name AS degree, students.surname AS surname, students.name AS name
+FROM students
+JOIN degrees ON students.degree_id
+WHERE degrees.name="Corso di laurea in Economia"
+ORDER BY surname;
+
+Mostro le righe 0 - 24 (5000 totali, 0 nella query, La query ha impiegato 0.0047 secondi.) [surname: AMATO... - AMATO...]
+
+|degree                     |surname|name     |
+|:-------------------------:|:-----:|:-------:|
+|Corso di Laurea in Economia|Amato  |Brigitta |
+|Corso di Laurea in Economia|Amato  |Carlo	  |
+|Corso di Laurea in Economia|Amato  |Carlo	  |
+|Corso di Laurea in Economia|Amato  |Ciro	  |
+|Corso di Laurea in Economia|Amato  |Danuta	  |
+|Corso di Laurea in Economia|Amato  |Diamante |
+|Corso di Laurea in Economia|Amato  |Diana	  |
+|Corso di Laurea in Economia|Amato  |Domingo  |
+|Corso di Laurea in Economia|Amato  |Egisto	  |
+|Corso di Laurea in Economia|Amato  |Enrica	  |
+|Corso di Laurea in Economia|Amato  |Enrica	  |
+...
+
+
 

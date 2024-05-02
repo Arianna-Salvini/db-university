@@ -48,4 +48,4 @@ Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file query.m
 
 ### BONUS:  
 
-- Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche il voto massimo. Successivamente, filtrare i tentativi con voto minimo 18.
+- Selezionare per ogni studente il numero di tentativi sostenuti per ogni esame, stampando anche il voto massimo. - - Successivamente, filtrare i tentativi con voto minimo 18.

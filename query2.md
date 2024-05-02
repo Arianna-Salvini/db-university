@@ -173,8 +173,9 @@ Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0.0001 secondi.)
 
 > SELECT courses.name AS "Courses of Dr. Fulvio Amato", courses.period
 > FROM teachers 
-> INNER JOIN course_teacher ON teachers.id = course_teacher.teacher_id 
-> INNER JOIN courses ON course_teacher.course_id = courses.id WHERE teachers.id = 44;
+> JOIN course_teacher ON teachers.id = course_teacher.teacher_id 
+> JOIN courses ON course_teacher.course_id = courses.id 
+> WHERE teachers.id = 44;
 
 Mostro le righe 0 - 10 (11 del totale, La query ha impiegato 0.0001 secondi.)
 
@@ -197,29 +198,115 @@ Mostro le righe 0 - 10 (11 del totale, La query ha impiegato 0.0001 secondi.)
 
 > SELECT students.surname AS student_lastname, students.name AS student_name, degrees.name AS degree, departments.name, degrees.level, degrees.address, degrees.email, degrees.website
 > FROM students
-> JOIN degrees ON students.degree_id 
-> JOIN departments ON degrees.department_id
-> ORDER BY students.surname, students.name;
+> JOIN degrees ON students.degree_id = degrees.id
+> JOIN departments ON degrees.department_id = departments.id
+> RDER BY students.surname, students.name;
 
-Mostro le righe 0 - 24 (4500000 del totale, La query ha impiegato 3.9158 secondi.)
+Mostro le righe 0 - 24 (5000 del totale, La query ha impiegato 0.0111 secondi.)
 
-| student_lastname | student_name | degree                                                 | name                     | level      | address                             | email                               | website                                    |
-|:-----------------|:-------------|:-------------------------------------------------------|--------------------------|------------|:------------------------------------|:------------------------------------|:-------------------------------------------|
-| Amato            | Brigitta     | Corso di Laurea in Biologia                            | Dipartimento di Biologia | triennale  | Contrada Galli 289 Piano 5          | biologia@uni.it                     | www.biologia.uni.it                        |
-| Amato            | Brigitta     | Corso di Laurea in Biologia molecolare                 | Dipartimento di Biologia | triennale  | Incrocio Fabbri 3                   | biologia-molecolare@uni.it          | www.biologia-molecolare.uni.it             |
-| Amato            | Brigitta     | Corso di Laurea in Biotecnologie                       | Dipartimento di Biologia | triennale  | Rotonda Sasha 74 Appartamento 36    | biotecnologie@uni.it                | www.biotecnologie.uni.it                   |
-| Amato            | Brigitta     | Corso di Laurea in Scienze naturali                    | Dipartimento di Biologia | triennale  | Rotonda Ferri 4 Piano 2             | scienze-naturali@uni.it             | www.scienze-naturali.uni.it                |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Biologia evoluzionistica | Dipartimento di Biologia | magistrale | Contrada Fiore 253                  | biologia-evoluzionistica@uni.it     | www.biologia-evoluzionistica.uni.it        |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Biologia marina          | Dipartimento di Biologia | magistrale | Via Colombo 378 Piano 9             | biologia-marina@uni.it              | www.biologia-marina.uni.it                 |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Biologia molecolare      | Dipartimento di Biologia | magistrale | Strada Armando 86 Piano 9           | biologia-molecolare@uni.it          | www.biologia-molecolare.uni.it             |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Biologia sanitaria       | Dipartimento di Biologia | magistrale | Contrada Osvaldo 497 Piano 5        | biologia-sanitaria@uni.it           | www.biologia-sanitaria.uni.it              |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Biotecnologie industriali| Dipartimento di Biologia | magistrale | Rotonda Tommaso 806 Appartamento 21 | biotecnologie-industriali@uni.it    | www.biotecnologie-industriali.uni.it       |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Scienze della natura     | Dipartimento di Biologia | magistrale | Strada Negri 323                    | scienze-della-natura@uni.it         | www.scienze-della-natura.uni.it            |
-| Amato            | Brigitta     | Corso di Laurea in Astronomia                          | Dipartimento di Biologia | triennale  | Rotonda De Santis 61                | astronomia@uni.it                   | www.astronomia.uni.it                      |
-| Amato            | Brigitta     | Corso di Laurea in Fisica                              | Dipartimento di Biologia | triennale  | Strada Rossi 7 Piano 3              | fisica@uni.it                       | www.fisica.uni.it                          |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Astronomia               | Dipartimento di Biologia | magistrale | Via Samira 39                       | astronomia@uni.it                   | www.astronomia.uni.it                      |
-| Amato            | Brigitta     | Corso di Laurea Magistrale in Fisica                   | Dipartimento di Biologia | magistrale | Piazza Nathan 77 Piano 2            | fisica@uni.it                       | www.fisica.uni.it                          |
-| Amato            | Brigitta     | Corso di Laurea in Ingegneria Civile                   | Dipartimento di Biologia | triennale  | Rotonda Felicia 485 Piano 1         | ingegneria-civile@
+student_lastname	student_name	degree	name	level	address	email	website	
+Amato	Brigitta	Corso di Laurea Magistrale in Relazioni Internazio...	Dipartimento di Scienze politiche, giuridiche e st...	magistrale	Incrocio Milani 70 Appartamento 93	relazioni-internazionali-e-diplomazia@uni.it	www.relazioni-internazionali-e-diplomazia.uni.it	
+Amato	Carlo	Corso di Laurea in Ingegneria per l'Ambiente e il ...	Dipartimento di Ingegneria civile, edile e ambient...	triennale	Borgo Nestore 88 Piano 7	ingegneria-per-lambiente-e-il-territorio@uni.it	www.ingegneria-per-lambiente-e-il-territorio.uni.i...	
+Amato	Carlo	Corso di Laurea Magistrale in Informatica	Dipartimento di Matematica	magistrale	Incrocio Eustachio 253 Appartamento 90	informatica@uni.it	www.informatica.uni.it	
+Amato	Ciro	Corso di Laurea in Fisioterapia	Dipartimento di Neuroscienze	triennale	Strada Parisi 5	fisioterapia@uni.it	www.fisioterapia.uni.it	
+Amato	Danuta	Corso di Laurea Magistrale in Lingue Moderne per l...	Dipartimento di Studi linguistici e letterari	magistrale	Incrocio Donatella 72 Appartamento 53	lingue-moderne-per-la-comunicazione-e-la-cooperazi...	www.lingue-moderne-per-la-comunicazione-e-la-coope...	
+Amato	Diamante	Corso di Laurea Magistrale in Cybersecurity	Dipartimento di Ingegneria dell'informazione	magistrale	Piazza Quasimodo 14	cybersecurity@uni.it	www.cybersecurity.uni.it	
+Amato	Diana	Corso di Laurea Magistrale in Chimica	Dipartimento di Scienze chimiche	magistrale	Strada Soriana 951	chimica@uni.it	www.chimica.uni.it	
+Amato	Domingo	Corso di Laurea Magistrale in Ingegneria dell'Auto...	Dipartimento di Ingegneria dell'informazione	magistrale	Strada Ippolito 684	ingegneria-dellautomazione@uni.it	www.ingegneria-dellautomazione.uni.it	
+Amato	Egisto	Corso di Laurea in Fisioterapia	Dipartimento di Neuroscienze	triennale	Strada Parisi 5	fisioterapia@uni.it	www.fisioterapia.uni.it	
+Amato	Enrica	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
+Amato	Enrica	Corso di Laurea in Lettere	Dipartimento di Studi linguistici e letterari	triennale	Rotonda Moretti 6	lettere@uni.it	www.lettere.uni.it	
+Amato	Felicia	Corso di Laurea Magistrale in European and Global ...	Dipartimento di Scienze politiche, giuridiche e st...	magistrale	Incrocio Orlando 731	european-and-global-studies@uni.it	www.european-and-global-studies.uni.it	
+Amato	Fiorenzo	Corso di Laurea in Infermieristica	Dipartimento di Medicina	triennale	Incrocio Gentile 507 Appartamento 78	infermieristica@uni.it	www.infermieristica.uni.it	
+Amato	Genziana	Corso di Laurea Magistrale in Astronomia	Dipartimento di Fisica e astronomia	magistrale	Via Samira 39	astronomia@uni.it	www.astronomia.uni.it	
+Amato	Germano	Corso di Laurea Magistrale in Cybersecurity	Dipartimento di Ingegneria dell'informazione	magistrale	Piazza Quasimodo 14	cybersecurity@uni.it	www.cybersecurity.uni.it	
+Amato	Giacinto	Corso di Laurea in Ingegneria per l'Ambiente e il ...	Dipartimento di Ingegneria civile, edile e ambient...	triennale	Borgo Nestore 88 Piano 7	ingegneria-per-lambiente-e-il-territorio@uni.it	www.ingegneria-per-lambiente-e-il-territorio.uni.i...	
+Amato	Grazia	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
+Amato	Iacopo	Corso di Laurea Magistrale in Economia e Diritto	Dipartimento di Scienze economiche e aziendali	magistrale	Incrocio Joseph 585 Piano 7	economia-e-diritto@uni.it	www.economia-e-diritto.uni.it	
+Amato	Irene	Corso di Laurea Magistrale in Ingegneria Informati...	Dipartimento di Ingegneria dell'informazione	magistrale	Via Milani 9	ingegneria-informatica@uni.it	www.ingegneria-informatica.uni.it	
+Amato	Joshua	Corso di Laurea in Biologia	Dipartimento di Biologia	triennale	Contrada Galli 289 Piano 5	biologia@uni.it	www.biologia.uni.it	
+Amato	Joshua	Corso di Laurea Magistrale in Bioingegneria	Dipartimento di Ingegneria dell'informazione	magistrale	Contrada Sibilla 626	bioingegneria@uni.it	www.bioingegneria.uni.it	
+Amato	Kociss	Corso di Laurea in Scienze naturali	Dipartimento di Biologia	triennale	Rotonda Ferri 4 Piano 2	scienze-naturali@uni.it	www.scienze-naturali.uni.it	
+Amato	Loris	Corso di Laurea Magistrale in Scienze della natura	Dipartimento di Biologia	magistrale	Strada Negri 323	scienze-della-natura@uni.it	www.scienze-della-natura.uni.it	
+Amato	Luigi	Corso di Laurea in Biologia molecolare	Dipartimento di Biologia	triennale	Incrocio Fabbri 3	biologia-molecolare@uni.it	www.biologia-molecolare.uni.it	
+Amato	Manfredi	Corso di Laurea in Diritto dell'Economia	Dipartimento di Scienze politiche, giuridiche e st...	triennale	Strada Miriana 2 Appartamento 06	diritto-delleconomia@uni.it	www.diritto-delleconomia.uni.it	
 
 
+*** Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti ***
+
+> SELECT degrees.name AS degree, courses.name AS course, teachers.name AS teacher_name, teachers.surname AS teacher_lastname
+> FROM degrees
+> JOIN courses ON courses.degree_id = degrees.id
+> JOIN course_teacher ON course_teacher.course_id=courses.id
+> JOIN teachers ON course_teacher.teacher_id = teachers.id;
+
+Mostro le righe 0 - 24 (1317 del totale, La query ha impiegato 0.0021 secondi.)
+
+degree	course	teacher_name	teacher_lastname	
+Corso di Laurea Magistrale in Biologia marina	corporis consequatur labore	Artemide	Rizzi	
+Corso di Laurea in Ingegneria Civile	est ratione qui	Artemide	Rizzi	
+Corso di Laurea in Logopedia	eligendi aut vel	Artemide	Rizzi	
+Corso di Laurea Magistrale in Chimica	voluptatem fuga incidunt	Artemide	Rizzi	
+Corso di Laurea in Economia	omnis culpa voluptatem	Artemide	Rizzi	
+Corso di Laurea Magistrale in Innovazione e Serviz...	nobis vitae reprehenderit	Artemide	Rizzi	
+Corso di Laurea Magistrale in Lingue Moderne per l...	saepe quod id	Artemide	Rizzi	
+Corso di Laurea in Biologia molecolare	aut consequatur sit	Gianantonio	Battaglia	
+Corso di Laurea in Ingegneria per l'Ambiente e il ...	laudantium sunt consequatur	Gianantonio	Battaglia	
+Corso di Laurea in Ingegneria Elettronica	corrupti enim praesentium	Gianantonio	Battaglia	
+Corso di Laurea Magistrale in Bioingegneria	architecto id cum	Gianantonio	Battaglia	
+Corso di Laurea in Infermieristica	rerum reiciendis quam	Gianantonio	Battaglia	
+Corso di Laurea in Tecniche di Laboratorio Biomedi...	eius animi atque	Gianantonio	Battaglia	
+Corso di Laurea in Educazione Professionale	similique id non	Gianantonio	Battaglia	
+Corso di Laurea in Fisioterapia	et in aspernatur	Gianantonio	Battaglia	
+Corso di Laurea in Lettere	facilis magnam rem	Gianantonio	Battaglia	
+Corso di Laurea in Ingegneria dell'Informazione	placeat mollitia atque	Erminia	Gatti	
+Corso di Laurea in Ingegneria Elettronica	officia dolor a	Erminia	Gatti	
+Corso di Laurea in Fisioterapia	officia nam pariatur	Erminia	Gatti	
+Corso di Laurea in Tecniche di Neurofisiopatologia	illum est ea	Erminia	Gatti	
+Corso di Laurea Magistrale in Odontoiatria e Prote...	qui corrupti itaque	Erminia	Gatti	
+Corso di Laurea in Chimica Industriale	aut reprehenderit deleniti	Erminia	Gatti	
+Corso di Laurea in Chimica Industriale	ea enim voluptatibus	Erminia	Gatti	
+Corso di Laurea in Statistica per le Tecnologie e ...	dolores dolor voluptas	Erminia	Gatti	
+Corso di Laurea in Lettere	ullam numquam perspiciatis	Erminia	Gatti	
+
+
+*** Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54) ***
+
+> SELECT DISTINCT departments.name, teachers.name AS teacher_name, teachers.surname AS teacher_lastname
+> FROM teachers
+> JOIN course_teacher ON course_teacher.teacher_id=teachers.id
+> JOIN courses ON course_teacher.course_id = courses.id
+> JOIN degrees ON courses.degree_id = degrees.id
+> JOIN departments ON degrees.department_id = departments.id
+> WHERE departments.name = "Dipartimento di Matematica"
+> ORDER BY teachers.surname;
+
+Mostro le righe 0 - 24 (54 del totale, La query ha impiegato 0.0003 secondi.)
+
+name	teacher_name	teacher_lastname	
+Dipartimento di Matematica	Loretta	Amato	
+Dipartimento di Matematica	Fulvio	Amato	
+Dipartimento di Matematica	Guendalina	Barbieri	
+Dipartimento di Matematica	Diamante	Barone	
+Dipartimento di Matematica	Kristel	Bellini	
+Dipartimento di Matematica	Maika	Bellini	
+Dipartimento di Matematica	Carmelo	Benedetti	
+Dipartimento di Matematica	Concetta	Bianchi	
+Dipartimento di Matematica	Elda	Bruno	
+Dipartimento di Matematica	Penelope	Bruno	
+Dipartimento di Matematica	Prisca	Caputo	
+Dipartimento di Matematica	Cira	Caputo	
+Dipartimento di Matematica	Valdo	Carbone	
+Dipartimento di Matematica	Pablo	Caruso	
+Dipartimento di Matematica	Cosetta	Costantini	
+Dipartimento di Matematica	Tosca	Donati	
+Dipartimento di Matematica	Sarita	Donati	
+Dipartimento di Matematica	Maria	Esposito	
+Dipartimento di Matematica	Gavino	Fabbri	
+Dipartimento di Matematica	Bibiana	Farina	
+Dipartimento di Matematica	Marvin	Ferrari	
+Dipartimento di Matematica	Noemi	Ferraro	
+Dipartimento di Matematica	Rudy	Fontana	
+Dipartimento di Matematica	Piererminio	Greco	
+Dipartimento di Matematica	Mariagiulia	Guerra	
 

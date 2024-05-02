@@ -56,9 +56,9 @@ Mostro le righe 0 - 24 (29 del totale, La query ha impiegato 0.0003 secondi.)
 
 *** Calcolare la media dei voti di ogni appello d'esame ***
 
-SELECT `exam_id`,  AVG(`vote`) AS `average_vote` 
-FROM `exam_student` 
-GROUP BY `exam_id`;
+> SELECT `exam_id`,  AVG(`vote`) AS `average_vote` 
+> FROM `exam_student` 
+> GROUP BY `exam_id`;
 
 Mostro le righe 0 - 24 (4078 del totale, La query ha impiegato 0.0001 secondi.)
 
@@ -93,10 +93,10 @@ Mostro le righe 0 - 24 (4078 del totale, La query ha impiegato 0.0001 secondi.)
 
 *** Contare quanti corsi di laurea ci sono per ogni dipartimento *** 
 
-SELECT `department_id`, COUNT(`name`) AS `tot_degrees` 
-FROM `degrees`
-GROUP BY `department_id`  
-ORDER BY `department_id` ASC;
+> SELECT `department_id`, COUNT(`name`) AS `tot_degrees` 
+> FROM `degrees`
+> GROUP BY `department_id`  
+> ORDER BY `department_id` ASC;
 
 Mostro le righe 0 - 11 (12 del totale, La query ha impiegato 0.0001 secondi.)
 
@@ -116,15 +116,15 @@ Mostro le righe 0 - 11 (12 del totale, La query ha impiegato 0.0001 secondi.)
 |12            |7          |        
 
 
-# JOINS
+# JOINS 
 
 *** Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia ***
 
-SELECT degrees.name AS degree, students.surname AS surname, students.name AS name
-FROM students
-JOIN degrees ON students.degree_id
-WHERE degrees.name="Corso di laurea in Economia"
-ORDER BY surname;
+> SELECT degrees.name AS degree, students.surname AS surname, students.name AS name
+> FROM students
+> JOIN degrees ON students.degree_id
+> WHERE degrees.name="Corso di laurea in Economia"
+> ORDER BY surname;
 
 Mostro le righe 0 - 24 (5000 totali, 0 nella query, La query ha impiegato 0.0047 secondi.) [surname: AMATO... - AMATO...]
 
@@ -144,4 +144,24 @@ Mostro le righe 0 - 24 (5000 totali, 0 nella query, La query ha impiegato 0.0047
 ...
 
 
+*** Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento di Neuroscienze ***
 
+> SELECT departments.name AS department, degrees.name AS degree, degrees.level AS level
+> FROM degrees
+> JOIN departments ON degrees.department_id
+> WHERE degrees.level = 'magistrale' AND departments.name = 'Dipartimento di Neuroscienze';
+
+Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0.0001 secondi.)
+
+|department                  |degree                                                |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Astronomia              |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Bioingegneria|          |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia evoluzionis... |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia marina         |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia molecolare     |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biologia sanitaria      |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Biotecnologie indust... |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Business Administrat... |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica                 |
+|Dipartimento di Neuroscienze|Corso di Laurea Magistrale in Chimica Industriale     |
+...

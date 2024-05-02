@@ -87,3 +87,29 @@ Mostro le righe 0 - 24 (4078 del totale, La query ha impiegato 0.0001 secondi.)
 |31     |16.9583     |	
 |32     |17.2500     |	
 |36     |20.1818     |	
+
+
+*** Contare quanti corsi di laurea ci sono per ogni dipartimento *** 
+
+SELECT `department_id`, COUNT(`name`) AS `tot_degrees` 
+FROM `degrees`
+GROUP BY `department_id`  
+ORDER BY `department_id` ASC;
+
+Mostro le righe 0 - 11 (12 del totale, La query ha impiegato 0.0001 secondi.)
+
+| department_id|tot_degrees|	
+|:------------:|:---------:|
+|1 	           |10         |	
+|2	           |4	       |
+|3	           |4	       |
+|4	           |9	       |
+|5	           |4	       |
+|6	           |6	       |
+|7	           |7          |
+|8	           |8          |
+|9	           |5          |
+|10	           |8          | 
+|11	           |3          |	
+|12            |7          |        
+
